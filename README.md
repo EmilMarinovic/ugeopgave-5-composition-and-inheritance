@@ -1,1 +1,2 @@
-# ugeopgave-5-composition-and-inheritance
+# Emil Marinovic
+# emma1001@stud.ek.dk
