@@ -1,0 +1,60 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Lamp {
+- int watt
+- boolean isOn
+
++ Lamp(int watt)
++ int getWatt()
++ void turnOn()
++ void turnOff()
++ String toString()
+}
+
+class Window {
+- int widthCm
+- int heightCm
+
++ Window(int widthCm, int heightCm)
++ String toString()
+}
+
+class Room {
+- String name
+- ArrayList<Lamp> lamps
+- ArrayList<Window> windows
+
++ Room(String name)
++ void addLamp(Lamp)
++ void addWindow(Window)
++ int getLampCount()
++ int getWindowCount()
++ int getTotalWatt()
++ void printRoom()
+}
+
+class Building {
+- String name;
+- ArrayList<Room> rooms
+
++ Building(String name)
++ void addRoom(Room)
++ int getTotalLampCount()
++ int getTotalWatt()
++ void printBuilding()
+}
+
+class Simulation {
++ {static} void runSim()
+}
+
+class Main {
++ {static} void main(String[] args)
+}
+
+Building *-- Room: has a
+Room *-- Lamp: has a
+Room *-- Window: has a
+
+@enduml
