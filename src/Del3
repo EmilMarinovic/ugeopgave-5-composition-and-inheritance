@@ -1,0 +1,26 @@
+Jeg bruger komposition, Band har et repertoire. Hvert band har altså et repertoire
+der tilhører bandet. Derudover har jeg en Song klasse som tilhører Repertoire klassen,
+da den har flere sange.
+Man kunne lave en Band klasse som superklasse og derefter have Myband og RivalBand som
+nedarvnings klasser. Derved vil de være små klasse der indeholder de samme felter.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tag din SP1-kode og svar på følgende. Skriv svarene som kommentarer i koden eller i en separat fil.
+
+Komposition (has-a): Find mindst ét sted hvor du allerede bruger komposition. Hvilke to klasser? Hvad er relationen?
+
+Nedarving (is-a): Er der klasser der ligner hinanden — deler de felter eller metoder? Kunne de arve fra en fælles superklasse? Hvad ville den hedde?
+
+Det er ikke et krav at du ændrer din kode — det er nok at du identificerer mulighederne.
